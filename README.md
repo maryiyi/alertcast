@@ -134,8 +134,3 @@ alertcast/
 │   └── test_truncation.py  # Zero-leakage truncation test suite
 └── figures/                # Output 300 DPI publication plots
 ```
-
----
-
-## 📄 License
-MIT License. The underlying dataset is provided by [Vadym Klymenko](https://github.com/Vadimkin/ukrainian-air-raid-sirens-dataset) under the MIT License.
