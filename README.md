@@ -1,4 +1,4 @@
-# 🚨 AlertCast
+# AlertCast
 
 ### Zero-Data-Leakage Forecasting of Air Raid Alert Starts in Ukraine
 
