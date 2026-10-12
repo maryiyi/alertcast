@@ -64,8 +64,8 @@ Alerts are time intervals $[s, e)$. Naive preprocessing often merges overlapping
 
 ### 3. Purged Label Horizon Splits
 A forecast issued at $t_{\text{train}}$ predicts events up to $t_{\text{train}} + 3\text{h}$. To prevent label leakage into future periods:
-- **Purged Train/Test Split:** Pre-test training origins satisfy $t_{\text{train}} + 3\text{h} \le t_{\text{test\_start}}$.
-- **Purged Walk-Forward Folds:** Every validation fold satisfies $t_{\text{train}} + 3\text{h} \le t_{\text{valid\_start}}$, ensuring the 3-hour label window is fully realized before validation begins.
+- **Purged Train/Test Split:** Pre-test training origins satisfy `t_train + 3h <= t_test_start`.
+- **Purged Walk-Forward Folds:** Every validation fold satisfies `t_train + 3h <= t_valid_start`, ensuring...
 - **Warm-Up Window:** The first 30 days of the dataset supply rolling historical context only and are never sampled as forecast origins.
 
 ### 4. Automated Proof: The Truncation Test
