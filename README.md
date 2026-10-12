@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 At the top of every hour, **AlertCast** predicts the probability that **a new air raid alert will start within the next 3 hours** for each Ukrainian oblast.
 
@@ -18,7 +18,7 @@ At the top of every hour, **AlertCast** predicts the probability that **a new ai
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Environment Setup
 Install [uv](https://github.com/astral-sh/uv) (or use standard Python 3.11+ venv):
@@ -48,7 +48,7 @@ make train   # Run ingestion, feature extraction, model fitting, and figure gene
 
 ---
 
-## 🛡️ Zero Data Leakage Architecture
+## Zero Data Leakage Architecture
 
 In time-series forecasting, data leakage often corrupts evaluation. AlertCast is engineered around a provable **Zero Data Leakage Architecture**:
 
@@ -76,7 +76,7 @@ The test suite in [`tests/test_truncation.py`](tests/test_truncation.py) provide
 
 ---
 
-## 📊 Evaluation Results
+## Evaluation Results
 
 Models are evaluated on the strictly unseen 90-day test window (`2026-07-14 04:00 UTC` to `2026-10-12 01:00 UTC`).
 
@@ -98,7 +98,7 @@ Models are evaluated on the strictly unseen 90-day test window (`2026-07-14 04:0
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 ### 1. Alert Frequency by Time of Day & Day of Week
 Historical alert start intensity across Ukraine (local `Europe/Kyiv` time), computed strictly on the pre-test training set:
@@ -117,7 +117,7 @@ Predicted alert start probabilities $\hat{p}(t)$ overlaying shaded active alert 
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 alertcast/
